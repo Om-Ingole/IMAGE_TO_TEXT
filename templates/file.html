@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}  
+ <div class="login">
+	<h1 class="heading">Image to text </h1>
+
+
+    <form  method="post" enctype='multipart/form-data'>
+        {{form.hidden_tag()}}
+        {{form.file(placeholder="image url")}}
+        {{form.submit(class="button-13")}}
+        
+    </form>
+
+   <br>
+   <br>
+
+
+ </div>
+{% endblock content %}

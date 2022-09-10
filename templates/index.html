@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}  
+ <div class="login">
+	<h1 class="heading">Image to Text </h1>
+  
+  
+
+
+     <!-- Main Input For Receiving Query to our ML -->
+
+    <form action="{{ url_for('output')}}" method="post" enctype='multipart/form-data'>
+        
+                      
+                          {{ form.search(class="form-control form-control-lg",placeholder="image url") }}
+                      
+
+
+        <!-- <button type="submit" class="btn btn-primary btn-block btn-large">Get Text</button> -->
+        {{ form.submit(class="button-13") }}
+    </form>
+   <br>
+   <br>
+ </div>
+ {% endblock content %}
+
+

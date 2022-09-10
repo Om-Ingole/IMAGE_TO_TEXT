@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+ <div class="login">
+	<h2 class="heading">Output text:</h2>
+
+<div class="output_t">
+
+     {{ output_text }}
+</div>
+   <br>
+   <br>
+   <div class="border-top pt-3">
+        <small class="text-muted">
+            <a class="ml-2" href="{{ url_for('home') }}">
+              <button type="submit" class="btn btn-primary btn-block btn-large">Search again</button>
+            </a>
+        </small>
+    </div>
+
+ </div>
+
+{% endblock content %}
