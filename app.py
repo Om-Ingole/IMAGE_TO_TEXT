@@ -35,8 +35,9 @@ def home():
 @app.route('/output',methods=['POST','GET'])
 def output():
     a = request.form['search']
-    print(a)
-    result =call_img(a);
+    print('-----------------',a)
+    result =call_img(a)
+    print("result==",result)
     return render_template('output.html', output_text=str(result))
 
 

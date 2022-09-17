@@ -4,7 +4,7 @@ from subprocess import call
 import argparse
 import requests
 import io
-#import pytesseract
+import pytesseract
 import time
 import csv
 
